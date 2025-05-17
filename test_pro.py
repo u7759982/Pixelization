@@ -21,7 +21,7 @@ def rescale(image, Rescale=True):
         return image
     if Rescale:
         width, height = image.size
-        threshold = 2048
+        threshold = 1024
         # calculate scaling factor to make the larger dimension threshold
         scale = min(threshold / width, threshold / height)
         if scale < 1:  # resize if image is larger than threshold in any dimension

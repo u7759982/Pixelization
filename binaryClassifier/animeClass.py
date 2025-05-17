@@ -34,7 +34,7 @@ def create_directory_structure():
     os.makedirs("data/train/unreal", exist_ok=True)
     os.makedirs("data/validation/real", exist_ok=True)
     os.makedirs("data/validation/unreal", exist_ok=True)
-    os.makedirs("data/test", exist_ok=True)  # Separate test directory
+    os.makedirs("data/test", exist_ok=True)  # separate test directory
     
     print("Directory structure created successfully.")
 
