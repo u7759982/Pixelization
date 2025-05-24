@@ -277,7 +277,7 @@ def pixelize_cli():
         if os.path.isdir(in_path):
             in_images = glob.glob(in_path + "/*.png") + glob.glob(in_path + "/*.jpg")
             if not out_path:
-                out_path = os.path.join(in_path, "outputs")
+                out_path = "./results"
             if not os.path.exists(out_path):
                 os.makedirs(out_path)
             elif os.path.isfile(out_path):
